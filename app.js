@@ -34,8 +34,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.send(err.status);
 });
-app.set('port', process.env.PORT || 3500);
-app.listen(app.get('port'), () => {
-    console.log('Server on port', app.get('port'));
-});
+
 module.exports = app;
