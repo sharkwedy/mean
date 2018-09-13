@@ -5,7 +5,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 
 var mongoose = require('mongoose');
-const URI = 'mongodb://User:Heroku1*@dds253922.mlab.com:53922/heroku_r2tpk9sf';
+const URI = 'mongodb://User:Heroku1*@ds147592.mlab.com:47592/heroku_m5bjc2zk';
+//const URI = 'mongodb://User:Heroku1*@dds253922.mlab.com:53922/heroku_r2tpk9sf';
 mongoose.connect(URI)
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
